@@ -33,6 +33,14 @@
                 $errors['price'] = 'Price must be numbers and . only';
             }
         }
+
+        // if there are errors
+        if(array_filter($errors)){
+            // do nothing
+        }
+        else{
+            header('Location: index.php');
+        }
     }
     
 ?>
